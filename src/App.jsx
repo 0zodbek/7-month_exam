@@ -18,7 +18,7 @@ function App() {
           }
         />
         <Route
-          path="/details"
+          path="/details/:slug"
           element={
             <MainLayout>
               <Details></Details>

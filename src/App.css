@@ -6,3 +6,26 @@ body {
 *{
 border:1px solid green !important;
 }
+@media (max-width: 640px) {
+  .wrapper {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+  .wrapper {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 769px) {
+  .wrapper {
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1024px) {
+  .wrapper {
+    justify-content: flex-beetwen;
+  }
+}

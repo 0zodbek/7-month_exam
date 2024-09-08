@@ -5,7 +5,6 @@ body {
 };
 *{
   font-family: 'Nunito Sans', sans-serif;
-  border:1px solid green !important;
   }
 
 @tailwind base;
