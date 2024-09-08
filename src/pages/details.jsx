@@ -87,7 +87,7 @@ function details() {
                       handleToDetails(el.slug);
                     }}
                     key={index}
-                    className="bg-transparent shadov px-4 py-2 rounded-lg mb-3 hover:shadov-md transition"
+                    className="bg-gray-100 shadov px-4 py-2 rounded-lg mb-3 hover:bg-gray-200 transition"
                   >
                     {el.slug}
                   </button>
