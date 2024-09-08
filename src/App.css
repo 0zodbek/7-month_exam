@@ -3,9 +3,7 @@
 body {
   font-family: 'Nunito Sans', sans-serif;
 }
-*{
-border:1px solid green !important;
-}
+
 /* styles.css */
 @media (max-width: 640px) {
   .wrapper {

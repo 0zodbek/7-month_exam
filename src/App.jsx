@@ -5,6 +5,7 @@ import Details from "./pages/details";
 import ErrorPage from "./pages/ErrorPage";
 import MainLayout from "./layouts/MainLayout";
 import { Routes, Route } from "react-router-dom";
+
 function App() {
   return (
     <div className="">
