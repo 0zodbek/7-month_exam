@@ -185,34 +185,39 @@ function Home() {
           <option value="Oceania">Oceania</option>
         </select>
       </div>
-      <div className="wrapper flex flex-wrap justify-between mx-auto max-w-7xl sm:justify-center md:justify-between lg:justify-start gap-4 ">
-        {data.data &&
-          data.data.map((el, index) => (
-            <div
-              onClick={() => handleToDetails(el.name.slug)}
-              key={index}
-              className="card bg-base-100 max-w-[264px] mb-[75px] h-80 shadow-xl rounded-none  "
-            >
-              <figure className="min-h-40 max-h-40 min-w-[264px]">
+      <div className="wrapper flex flex-wrap justify-between mx-auto max-w-7xl gap-4">
+  {data.data &&
+    data.data.map((el, index) => (
+      <div
+        onClick={() => handleToDetails(el.name.slug)}
+        key={index}
+        className="card bg-base-100 max-w-[264px] mb-6 h-80 shadow-xl rounded-none flex flex-col"
+      >
+         <figure className="min-h-40 max-h-40 min-w-[264px] max-w-[264px]">
                 <img
                   className="min-h-40 max-h-40 min-w-full"
                   src={el.flags.png}
                   alt={el.name.common}
                 />
               </figure>
-              <div className="mt-6 ml-6">
-                <h2 className="font-extrabold text-18px">
-                  {el.name.common}
-                </h2>
-                <div className="flex flex-col mt-4">
-                  <p className="font-semibold text-sm mb-1">Population: <span className="font-light">{el.population.toLocaleString()}</span></p>
-                  <p className="font-semibold text-sm mb-1">Region: <span className="font-light">{el.region}</span></p>
-                  <p className="font-semibold text-sm">Capital: <span className="font-light">{el.capital}</span></p>
-                </div>
-              </div>
-            </div>
-          ))}
+        <div className="flex-1 p-4">
+          <h2 className="font-extrabold text-lg truncate">{el.name.common}</h2>
+          <div className="flex flex-col mt-4">
+            <p className="font-semibold text-sm mb-1">
+              Population: <span className="font-light">{el.population.toLocaleString()}</span>
+            </p>
+            <p className="font-semibold text-sm mb-1">
+              Region: <span className="font-light">{el.region}</span>
+            </p>
+            <p className="font-semibold text-sm">
+              Capital: <span className="font-light">{el.capital}</span>
+            </p>
+          </div>
+        </div>
       </div>
+    ))}
+</div>
+
     </div>
   );
 }
